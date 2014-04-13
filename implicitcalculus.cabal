@@ -16,6 +16,9 @@ Executable interpreter
   Ghc-Options: -funbox-strict-fields -O
   Hs-Source-Dirs: .
 
+  Other-Modules:    SrcParser
+                    SrcLexer
+
   Build-Depends:    base >= 4,
                     mtl,
                     containers,
