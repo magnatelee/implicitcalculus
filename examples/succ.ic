@@ -1,0 +1,3 @@
+interface Succ a = { succ : a -> a }
+let succIntImpl : Succ Int = Succ { succ = \x : Int. x } : Succ Int in
+implicit { succIntImpl } in (? (Succ Int))
