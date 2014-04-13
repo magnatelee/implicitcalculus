@@ -1,0 +1,22 @@
+Name:               ImplicitCalculus
+Version:            0.0.1
+Cabal-version:      >= 1.2.3
+Build-type:         Simple
+Category:           Interpreter
+Author:             Wonchan Lee
+Maintainer:         Wonchan Lee <wonchan@cs.stanford.edu>
+Stability:          experimental
+Synopsis:           Interpreter
+Description:        Interpreter for Implicit Calculus
+Extra-Source-Files: SrcParser.y SrcLexer.x
+
+Executable interpreter
+  Main-is: Main.hs
+  Build-Tools: alex, happy
+  Ghc-Options: -funbox-strict-fields -O
+  Hs-Source-Dirs: .
+
+  Build-Depends:    base >= 4,
+                    mtl,
+                    containers,
+                    array
