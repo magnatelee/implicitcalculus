@@ -18,7 +18,7 @@ which means the user should specify the type for every let variable,
 implicit lookup, and field access to records. Here is the modified
 syntax of the source language:
 
-E ::= x | u : T | ? T | ... (the rest are the same)
+E ::= x | u : T | ? T | ... (the rest is the same)
 
 If you find any issues or bugs, please report to wonchan@stanford.edu.
 
